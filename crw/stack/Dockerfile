@@ -55,3 +55,8 @@ RUN \
     bash -c ' . edksetup.sh BaseTools' && \
     sed -ci.bak1 Conf/target.txt -e 's/ACTIVE_PLATFORM.*/ACTIVE_PLATFORM = MdeModulePkg\/MdeModulePkg.dsc/ ; s/TOOL_CHAIN_TAG.*/TOOL_CHAIN_TAG = GCC49/ ; s/TARGET_ARCH.*/TARGET_ARCH = IA32 X64/ ;' && \
     bash -c ' . edksetup.sh && build '
+
+#RUN \
+#    WIZARD_HOME=$SRC/udw ; \
+#    WIZARD_U=https://github.com/tianocore/edk2-share ; \
+#    git clone $WIZARD_U $WIZARD_HOME
