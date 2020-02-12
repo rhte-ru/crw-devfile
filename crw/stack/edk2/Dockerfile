@@ -5,6 +5,7 @@ RUN \
     dnf install -y --nodocs --disablerepo \* --enablerepo codeready-builder-for-rhel-8-x86_64-rpms --enablerepo rhel-8-for-x86_64-appstream-rpms --enablerepo rhel-8-for-x86_64-baseos-rpms \
 	bzip2 \
 	edk2-ovmf \
+	file \
 	git \
 	gcc \
 	gcc-c++ \
