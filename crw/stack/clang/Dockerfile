@@ -1,14 +1,15 @@
 #FROM rhel8
 FROM registry.access.redhat.com/ubi8/ubi
 
+#--enablerepo codeready-builder-for-rhel-8-x86_64-rpms
 RUN \
-    dnf install -y --nodocs --disablerepo \* --enablerepo codeready-builder-for-rhel-8-x86_64-rpms --enablerepo rhel-8-for-x86_64-appstream-rpms --enablerepo rhel-8-for-x86_64-baseos-rpms \
+    dnf install -y --nodocs --disablerepo \* --enablerepo rhel-8-for-x86_64-appstream-rpms --enablerepo rhel-8-for-x86_64-baseos-rpms \
 	bzip2 \
 	clang \
 	diffutils \
 	file \
 	git \
-	libuuid-devel.x86_64 \
+	libuuid-devel \
 	lld \
 	make \
 	patch \
